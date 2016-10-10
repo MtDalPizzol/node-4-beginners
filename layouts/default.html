@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    <%= metadata.title %>
+  </title>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="/css/materialize.min.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="/default.css" media="screen" charset="utf-8">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <div class="adjust-sidenav">
+
+    <!-- Begin Top Nav -->
+    <div class="navbar-fixed">
+      <nav class="grey darken-4">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo right">Death Star .Inc</a>
+          <ul>
+            <li><a href="#" data-activates="slide-out" class="button-collapse red-text text-lighten-1"><i class="material-icons">menu</i></a></li>
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/stormtroopers">Stormtroopers</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- End Top Nav -->
+
+    <!-- Begin Main Content -->
+    <main>
+      <h3 class="header"><%= text.title %></h3>
+      <%- include(partials.content) %>
+    </main>
+    <!-- End Main Content -->
+
+  </div>
+
+
+  <!-- Begin Sidenav-->
+  <ul id="slide-out" class="side-nav fixed">
+    <li>
+      <div class="userView">
+        <img class="background" src="images/death-star.jpg">
+        <a href="#"><img class="circle" src="/images/profile.png"></a>
+        <a href="#"><span class="white-text name">Dart Vader</span></a>
+        <a href="#"><span class="white-text email">dartvader@deathstar.com</span></a>
+      </div>
+    </li>
+    <li><a class="waves-effect" href="/"><i class="material-icons red-text text-lighten-1">dashboard</i>Dashboard</a></li>
+    <li><a class="waves-effect" href="/stormtroopers"><i class="material-icons red-text text-lighten-1">people</i>Stormtroopers</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="waves-effect" href="#!"><i class="material-icons red-text text-lighten-1">settings</i>Settings</a></li>
+  </ul>
+
+  <!-- End Sidenav-->
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <!--Your app .js-->
+  <script type="text/javascript" src="/default.js"></script>
+
+</body>
+
+</html>

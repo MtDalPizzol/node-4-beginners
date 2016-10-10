@@ -1,0 +1,18 @@
+{
+  "name": "ifsul-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start server.js --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "materialize-css": "^0.97.7",
+    "pm2": "^1.1.3"
+  }
+}

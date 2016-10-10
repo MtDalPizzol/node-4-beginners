@@ -1,0 +1,78 @@
+html, body {
+  min-height: 100%;
+}
+
+body {
+    background-color: #000;
+    background: url(/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.83);
+}
+
+.adjust-sidenav {
+  min-height: 100%;
+    padding-left: 300px;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.card {
+    background-color: rgba(160, 160, 160, 0.2);
+}
+
+.side-nav.fixed {
+    background: #212121;
+}
+
+.side-nav.fixed a {
+    color: rgba(255, 255, 255, 0.83);
+}
+
+.side-nav a:hover, nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+.divider {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+table {
+    color: rgba(255, 255, 255, 0.83);
+}
+
+table.bordered>thead>tr, table.bordered>tbody>tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+table.highlight>tbody>tr:hover {
+    background-color: rgba(242, 242, 242, 0.05);
+}
+
+table [type="checkbox"]+label {
+    padding-left: 0;
+    height: 16px;
+    line-height: 16px;
+}
+
+td, th {
+    padding: 15px 15px;
+}
+
+main, nav .nav-wrapper {
+    padding: 0 32px;
+}
+
+input[type="checkbox"].filled-in:checked + label:after{
+     border: 2px solid #EF5350;
+     background-color: #EF5350;
+}
+
+@media only screen and (max-width: 992px) {
+    .adjust-sidenav {
+        padding-left: 0;
+    }
+}

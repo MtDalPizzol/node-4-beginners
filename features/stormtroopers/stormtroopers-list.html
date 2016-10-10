@@ -1,0 +1,37 @@
+<a class="waves-effect waves-light btn red lighten-1" href="/stormtrooper"><i class="material-icons left">person_add</i>Add Stormtrooper</a>
+
+<br><br>
+<div class="card">
+
+
+  <table class="bordered highlight">
+    <thead>
+      <tr>
+        <th>
+          <input type="checkbox" class="filled-in" id="select-all" name="selectAll" value="">
+          <label for="select-all"></label>
+        </th>
+        <th>#</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+        <th>Column heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(i = 1; i < 11; i++) {  %>
+        <tr>
+          <td>
+            <input class="filled-in" type="checkbox" id="selected-<%= i %>" name="selected[]" value="">
+            <label for="selected-<%= i %>"></label>
+          </td>
+          <td>
+            <a href="#" class="red-text text-lighten-2"><strong><%= i %></strong></a>
+          </td>
+          <td><a href="#" class="red-text text-lighten-2">Column content</a></td>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+        <% } %>
+    </tbody>
+  </table>
+</div>
