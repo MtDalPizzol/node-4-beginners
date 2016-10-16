@@ -9,7 +9,7 @@ module.exports = {
       },
 
       text: {
-        title: 'About node4beginners'
+        title: 'About node-4-beginners'
       },
 
       partials: {
