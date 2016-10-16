@@ -1,20 +1,20 @@
 {
-  "name": "node4beginners",
+  "name": "node-4-beginners",
   "version": "1.0.0",
   "description": "A simple Express.js/Socket.io app example.",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MtDalPizzol/node4beginners.git"
+    "url": "https://github.com/MtDalPizzol/node-4-beginners.git"
   },
   "scripts": {
     "start": "./node_modules/pm2/bin/pm2 start server.js --watch"
   },
   "author": "Matheus Dal'Pizzol",
   "bugs": {
-    "url": "https://github.com/MtDalPizzol/node4beginners/issues"
+    "url": "https://github.com/MtDalPizzol/node-4-beginners/issues"
   },
-  "homepage": "https://github.com/MtDalPizzol/node4beginners",
+  "homepage": "https://github.com/MtDalPizzol/node-4-beginners",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
