@@ -12,7 +12,23 @@ It aims to cover a bunch of Express.js concepts and the very basics of Socket.io
 * Code splitting and organization
 * Simple real time with Socket.io
 
-Hope it helps.
+## Quick start
+
+```bash
+# clone this repo
+$ git clone https://github.com/MtDalPizzol/node-4-beginners.git my-app
+
+# change directory to your app
+$ cd my-app
+
+# install the dependencies with npm
+$ npm install
+
+# start the development server
+$ npm start
+
+# Browse to http://localhost:8081
+```
 
 ## License
 
