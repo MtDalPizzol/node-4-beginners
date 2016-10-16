@@ -2,5 +2,6 @@
   "esversion": 6,
   "node": true,
   "browser": true,
-  "undef": true
+  "undef": true,
+  "predef": ["$", "io"]
 }

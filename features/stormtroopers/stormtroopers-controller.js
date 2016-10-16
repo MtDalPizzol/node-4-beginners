@@ -1,5 +1,6 @@
 module.exports = {
 
+
   list: function (req, res, next) {
 
     var data = {
@@ -13,12 +14,12 @@ module.exports = {
       },
 
       partials: {
-        content: '../features/stormtroopers/stormtroopers-list'
+        content: '../features/stormtroopers/stormtroopers-list.html'
       }
 
     };
 
-    res.render('layouts/default', data);
+    res.render('layouts/default.html', data);
 
   },
 
@@ -36,19 +37,28 @@ module.exports = {
       },
 
       partials: {
-        content: '../features/stormtroopers/stormtroopers-form'
+        content: '../features/stormtroopers/stormtroopers-form.html'
       }
 
     };
 
-    return res.render('layouts/default', data);
-
+    return res.render('layouts/default.html', data);
 
   },
 
 
-  save: function(req, res, next){
-    res.send('Storm trooper added!');
+  save: function(io) {
+    return function(req, res, next){
+
+      console.log(req.body);
+
+      io.sockets.emit('stormtrooper:added', {
+          status: 'green',
+          title: 'New stormtrooper added! His name is ' + req.body.name + '!',
+          message: 'A new badass stormtrooper was successfuly hired to the Death Star taskforce! Contact him via ' + req.body.email + '.'
+      });
+
+    };
   },
 
 

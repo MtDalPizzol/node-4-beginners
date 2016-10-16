@@ -1,17 +1,27 @@
 {
-  "name": "ifsul-node",
+  "name": "node4beginners",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple Express.js/Socket.io app example.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MtDalPizzol/node4beginners.git"
+  },
   "scripts": {
     "start": "./node_modules/pm2/bin/pm2 start server.js --watch"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Matheus Dal'Pizzol",
+  "bugs": {
+    "url": "https://github.com/MtDalPizzol/node4beginners/issues"
+  },
+  "homepage": "https://github.com/MtDalPizzol/node4beginners",
+  "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "ejs": "^2.5.2",
     "express": "^4.14.0",
-    "materialize-css": "^0.97.7"
+    "materialize-css": "^0.97.7",
+    "socket.io": "^1.5.0"
   },
   "devDependencies": {
     "pm2": "^2.0.18"

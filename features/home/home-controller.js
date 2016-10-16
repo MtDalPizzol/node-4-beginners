@@ -1,7 +1,6 @@
 module.exports = {
 
   dashboard: function(req, res, next) {
-    // res.send('Welcome to the Death Star, Modafoca!');
 
     var data = {
 
@@ -10,16 +9,16 @@ module.exports = {
       },
 
       text: {
-        title: 'Welcome to the Death Star Dashboard!'
+        title: 'About node4beginners'
       },
 
       partials: {
-        content: '../features/home/dashboard'
+        content: '../features/home/dashboard.html'
       }
 
     };
 
-    return res.render('layouts/default', data);
+    return res.render('layouts/default.html', data);
 
   }
 
