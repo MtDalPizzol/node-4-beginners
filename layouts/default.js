@@ -13,22 +13,20 @@ $(document).ready(function() {
         html += ' </div>';
         html += '</div>';
 
-    $notifications.show();
-
-    return $(html);
+    $notifications
+      .append($(html))
+      .show();
 
   }
 
   var socket = io.connect('http://localhost:8081');
 
   socket.on('notification', function(data) {
-    var note = notification(data.status, data.title, data.message);
-    $notifications.append(note);
+    notification(data.status, data.title, data.message);
   });
 
   socket.on('stormtrooper:added', function(data){
-    var note = notification(data.status, data.title, data.message);
-    $notifications.append(note);
+    notification(data.status, data.title, data.message);
   });
 
   $('#stormtrooper-form').on('submit', function(event) {
