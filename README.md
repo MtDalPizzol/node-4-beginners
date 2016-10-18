@@ -3,7 +3,7 @@
 This is a simple Express.js/Socket.io app I developed for a Node.js introduction workshop at IFSUL, in Passo Fundo, Brazil.
 It aims to cover a bunch of Express.js concepts and the very basics of Socket.io, taking a practical approach.
 
-## Topics covered
+## Covered topics
 
 * Serving static files
 * View engines setup
@@ -29,6 +29,25 @@ $ npm start
 
 # Browse to http://localhost:8081
 ```
+
+## Gotchas
+
+If you're using this at an educational institution, chances are that you're behind a corporate proxy server. So, before you run `npm install` you'll need to configure NPM to work through that server.
+
+**Set NPM proxy:**
+```bash
+$ npm config set proxy "http://username:password@host:port/"
+
+$ npm config set https-proxy "http://username:password@host:port/"
+```
+
+**Unset NPM proxy:**
+```bash
+$ npm config rm proxy
+
+$ npm config rm https-proxy
+```
+
 
 ## License
 

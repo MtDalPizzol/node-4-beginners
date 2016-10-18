@@ -66,6 +66,10 @@ nav .nav-wrapper {
   padding: 0 32px;
 }
 
+nav .brand-logo.right {
+  right: 4rem;
+}
+
 main {
   padding: 64px;
 }

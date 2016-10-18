@@ -14,7 +14,7 @@ $(document).ready(function() {
         html += '</div>';
 
     $notifications
-      .append($(html))
+      .html(html)
       .show();
 
   }
@@ -27,6 +27,10 @@ $(document).ready(function() {
 
   socket.on('stormtrooper:added', function(data){
     notification(data.status, data.title, data.message);
+  });
+
+  socket.on('disconnect', function() {
+    notification('red', 'Socket disconected!', 'Check your damn netowork...');
   });
 
   $('#stormtrooper-form').on('submit', function(event) {

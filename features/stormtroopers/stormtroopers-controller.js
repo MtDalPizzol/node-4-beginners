@@ -19,7 +19,17 @@ module.exports = {
 
     };
 
-    res.render('layouts/default.html', data);
+    res.format({
+      json: function() {
+        res.json({
+          data: data,
+          stormtroopers: ['st1', 'st2', 'st3', 'st4']
+        });
+      },
+      html: function() {
+        res.render('layouts/default.html', data);
+      }
+    });
 
   },
 

@@ -32,11 +32,11 @@ app.use(bodyParser.json());
 app.use(stormtroopers(io));
 app.use(home);
 
-// Send a not welcome message to unauthorized stormtroopers
+// Send a welcome message
 io.on('connection', function (socket) {
   socket.emit('notification', {
     status: 'light-blue',
-    title: 'Welcome at the Dark Side of the force!',
+    title: 'Welcome to the Dark Side of the force!',
     message: 'Are you an authorized stormtrooper? I really hope you are, cuz you don\'t wanna mess with me, motherfucker!'
   });
 });
